@@ -9,11 +9,10 @@ function App() {
       <Header />
       <div>5555</div>
       <h1 className="active">{}</h1>
-      <h1>야 호</h1>
+      <h1></h1>
       <Footer />
     </>
   );
 }
 
 export default App;
-
