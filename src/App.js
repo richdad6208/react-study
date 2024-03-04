@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
     const newTodos = todos.map((todo, todoIndex) =>
       index === todoIndex ? { ...todo, completed: !todo.completed } : todo
     );
+    setTodos(newTodos);
   };
 
   return (
@@ -44,14 +45,9 @@ function App() {
           </li>
         ))}
       </ul>
+      <ul></ul>
     </>
   );
 }
 
-function buttonAdd() {
-  //
-  //체크박스 + input 아래에 새로운 줄을 추가하며 value 입력
-  //inputValue의 데이터를 나열
-  //기존데이터는 아래로 밀기
-}
 export default App;
